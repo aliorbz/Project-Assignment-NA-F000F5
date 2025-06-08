@@ -1,0 +1,840 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #121212;
+}
+
+
+
+/* Navbar */
+
+.container-nav {
+  width: 100vw;
+  margin: 0 50px;
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+}
+
+nav {
+  display: flex;
+  
+  align-items: center;
+  padding: 0 0 20px 0;
+  background-color: #121212;
+  
+}
+
+nav .logo {
+  display: inline-block;
+}
+
+nav .logo img {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgb(193, 193, 193);
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+nav ul li .nav-btn {
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #121212;
+  background-color: #FFFFFF;
+
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 15px #dddcdc;
+}
+
+.nav-btn:hover {
+  box-shadow: 0 0 30px #dddcdc;
+}
+
+
+@media (max-width: 768px) {
+  .container-nav {
+    margin: 0 20px;
+    height: 60px;
+    padding: 0;
+  }
+
+ nav .logo img {
+  margin-top: 18px;
+  margin-left: 0px;
+  height: 2.5rem;
+  width: 2.5rem;
+ }
+
+ nav ul {
+  margin-top: 10px;
+  margin-right: -8px;
+  display: flex;
+  gap: 12px;
+}
+
+nav ul li a {
+  font-size: 14px;
+}
+
+nav ul li .nav-btn {
+  padding: 8px 18px;
+}
+}
+
+
+/* page two- Banner */
+
+.container-banner {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 0px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 0;
+  background-color: #2c2c2c;
+}
+
+
+.banner h1 {
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+.banner p {
+  font-size: 1.8vw;
+  margin-bottom: 30px;
+  color: #b0b0b0;
+}
+
+.banner .text a {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.banner .ban-two img {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 43vh;
+  width: 44vw;
+  box-shadow: 0 0 30px #000000;
+  border-radius: 10px;
+}
+
+.ban-one {
+  width: 50vw;
+  font-size: 2.2vw;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ban-one .ban-btn {
+  font-size: 1.8vw;
+  color: #000;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 0 0 20px #000000;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.ban-btn:hover {
+  box-shadow: 0 0 20px #dbdbdb;
+}
+  
+@media (max-width: 768px) {
+  .container-banner {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0px;
+    padding: 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ban-one {
+  width: 100vw;
+  margin-left: 40px;
+}
+
+.banner h1 {
+  font-size: 7vw;
+  padding-bottom: 0px;
+}
+
+.banner p {
+  font-size: 4vw;
+  padding-bottom: 0px;
+}
+
+.banner .ban-two img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    height: 30vh;
+    width: 75vw;
+    box-shadow: 4px 4px 30px rgb(193, 193, 193);
+    border-radius: 10px;
+}
+
+.ban-one .ban-btn {
+  font-size: 15px;
+}
+}
+
+
+
+
+/* page three- Clients */
+
+.clients {
+  text-align: center;
+  padding: 40px 0 50px 0;
+  margin: 40px auto 50px auto;
+}
+
+.container-client h1 {
+  font-size: 3vw;
+  color: #f5f5f5;
+}
+
+.container-client p {
+  font-size: 1.5vw;
+  color: #b0b0b0;
+}
+
+.clients img {
+  height: 80px;
+  margin: 20px 30px;
+  box-shadow: 0 0 20px #939393;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.clients .client-logos {
+  margin: 60px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .container-client h1 {
+    margin: 0 40px;
+  font-size: 8vw;
+}
+
+.container-client p {
+  margin: 0 40px;
+  font-size: 4.5vw;
+}
+
+.clients .client-logos {
+  margin: 40px 0 0 0;
+}
+
+.clients img {
+  height: 60px;
+}
+}
+
+
+/* page four- Power of Airdrops */
+
+.blockchain-sectors {
+  padding: 200px 0px;
+  text-align: center;
+  background-color: #2c2c2c;
+  font-family: 'Inter', sans-serif;
+}
+
+.blockchain-sectors h2 {
+  font-size: 3.5vw;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.blockchain-sectors h2 span {
+  display: block;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.subtitle {
+  font-size: 1.8vw;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+}
+
+.container-x {
+  width: 100vw;
+}
+
+.card-grid {
+  margin: 150px 150px 0 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+}
+
+.card {
+  background: #dbdbdb;
+  border-radius: 12px;
+  
+  padding: 60px 30px;
+  box-shadow: 0 0 30px #000000;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 26px rgba(251, 250, 250);
+}
+
+.card .icon {
+  background-color: #e6f4ea;
+  padding: 15px 20px 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.card .icon img {
+  width: 26px;
+  height: 26px;
+}
+
+.card h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .blockchain-sectors {
+    padding: 100px 0px;
+  }
+
+
+  .blockchain-sectors h2 {
+  font-size: 7.7vw;
+}
+
+.subtitle {
+  font-size: 4.3vw;
+  margin-bottom: 50px;
+}
+}
+
+
+
+/* page five- stats */
+
+.blockchain-impact {
+  background-color: #121112;
+  padding: 60px 100px 60px 200px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container-y {
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-between;
+ 
+}
+
+.impact-text {
+  flex: 1 1 300px;
+  display: inline-block;
+}
+
+.impact-text h2 {
+  font-size: 3vw;
+  font-weight: 700;
+  width: auto;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+  
+}
+
+.impact-text p {
+  font-size: 1.6vw;
+  color: #b0b0b0;
+  
+}
+
+.impact-stats {
+  flex: 1 1 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content:start ;
+  gap: 30px;
+  flex: 1 1 45%;
+}
+
+.stat-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.stat-item h3 {
+  font-size: 1.8vw;
+  color: #f5f5f5;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stat-item p {
+  margin: 0;
+  font-size: 1.1vw;
+  color: #b0b0b0;
+}
+
+
+@media (max-width: 768px) {
+  .blockchain-impact {
+    padding: 80px 40px;
+  }
+
+  .impact-text h2 {
+    font-size: 7.5vw;
+    font-weight: 700;
+    width: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+ .impact-text p {
+    font-size: 4.5vw;
+    text-align: center;
+ }
+
+  .container-y {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .impact-stats {
+    width: 80%;
+  }
+
+  .stat-item {
+    flex: 1 1 100%;
+  }
+
+  .impact-text {
+  flex: 1 1 100px;
+}
+
+.stat-item h3 {
+  font-size: 6.5vw;
+}
+
+.stat-item p {
+  font-size: 4vw;
+}
+}
+
+
+
+/* page six- card */
+
+.blockchain-future {
+  margin: 0 0 0 0;
+  padding: 120px 20px 250px 20px;
+  background: #2c2c2c;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.blockchain-future h2 {
+  font-size: 3vw;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.blockchain-future .subtitle {
+  font-size: 1.5vw;
+  color: #b0b0b0;
+  margin-bottom: 120px;
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.future-grid {
+  display: flex;
+  gap: 180px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.future-card {
+  
+  border-radius: 100px;
+  height: 160px;
+  width: 300px;
+  
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+
+.card-image {
+  
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+}
+
+.card-image img {
+  box-shadow: 0 0 30px #000000;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-content {
+  position: absolute;
+  background: #dbdbdb;
+  border: 0.1px black solid;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  height: 200px;
+  width: 290px;
+  box-shadow: 0 0 20px #6a6a6a;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255);
+}
+
+.card-content p {
+  font-size: 15px;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+  margin-bottom: 12px;
+  word-spacing: -0.06px;
+}
+
+.readmore {
+  position: relative;
+  top: 15px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.readmore:hover {
+  color: #6d6e6d;
+}
+
+
+@media (max-width: 768px) {
+  .blockchain-future {
+  padding: 100px 20px 200px 20px;
+}
+
+  .future-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 140px;
+  }
+
+  .future-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .blockchain-future h2 {
+    font-size: 7.5vw;
+  }
+
+  .blockchain-future .subtitle {
+  margin-bottom: 50px;
+  font-size: 4vw;
+}
+
+.card-grid {
+  margin: 0 40px;
+}
+
+.card-image img {
+  width: 90%;
+}
+
+.card-content {
+  height: 195px;
+    width: 230px;
+}
+
+}
+
+
+
+/* Contact Us */
+
+.contact {
+  background-color: #121112;
+  padding: 60px 0;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-img img {
+  
+  height: 30vh;
+  width: 30vw;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #b0b0b0;
+}
+
+.contact form {
+  max-width: 500px;
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-form h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.contact button {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  padding: 12px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px #FFFFFF solid;
+}
+
+.contact button:hover {
+  background-color: #b0b0b0;
+  color: #000000;
+  border: 1px #ffffff solid;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact form {
+    width: 80vw;
+  }
+
+  .contact-img img {
+    width: 80vw;
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #2c2c2c;
+  color: #cbd5e1;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  box-shadow: 0 0 20px #b0b0b0;
+}
+
+.footer-socials {
+  margin-top: 16px;
+}
+
+.footer-socials a {
+  color: #cbd5e1;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #38bdf8;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #38bdf8;
+}
+
+.footer-form {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #000000;
+}
+
+.footer-form input {
+  border: none;
+  padding: 10px 12px;
+  background: transparent;
+  color: #0f0f0f;
+  flex-grow: 1;
+  outline: none;
+}
+
+.footer-form button {
+  background: none;
+  border: none;
+  padding: 10px 12px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-form button:hover {
+  color: #38bdf8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+ .footer-section {
+  flex: 1 1 100px;
+}
+}
