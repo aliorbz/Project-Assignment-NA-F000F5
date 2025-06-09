@@ -193,9 +193,20 @@ nav ul li .nav-btn {
     justify-content: space-between;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 0;
+  background-color: #2c2c2c;
+  padding-top: 300px;
+  padding-bottom: 0px;
+}
+
 .ban-one {
   width: 100vw;
   margin-left: 40px;
+  margin-bottom: 60px;
 }
 
 .banner h1 {
@@ -209,11 +220,11 @@ nav ul li .nav-btn {
 }
 
 .banner .ban-two img {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 60px;
-    height: 30vh;
-    width: 75vw;
+    position: absolute;
+    top: 130px;
+    left: -16px;
+    height: 28vh;
+    width: 80vw;
     box-shadow: 4px 4px 30px rgb(193, 193, 193);
     border-radius: 10px;
 }
@@ -579,6 +590,7 @@ nav ul li .nav-btn {
 .card-content:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(255, 255, 255);
+  background: #ffffff;
 }
 
 .card-content p {
